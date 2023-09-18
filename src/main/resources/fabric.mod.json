@@ -18,6 +18,7 @@
   "mixins": [
     "betteruiscale.mixins.json"
   ],
+  "accessWidener": "betteruiscale.accesswidener",
 
   "depends": {
     "fabricloader": ">=0.11.3",

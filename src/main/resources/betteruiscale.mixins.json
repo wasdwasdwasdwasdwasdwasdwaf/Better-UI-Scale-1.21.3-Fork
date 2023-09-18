@@ -4,6 +4,7 @@
   "package": "net.rosemods.betteruiscale.mixin",
   "compatibilityLevel": "JAVA_16",
   "client": [
+    "MixinRenderLayer",
     "MixinWindow",
     "compat.MixinSodiumGameOptionPages"
   ],
