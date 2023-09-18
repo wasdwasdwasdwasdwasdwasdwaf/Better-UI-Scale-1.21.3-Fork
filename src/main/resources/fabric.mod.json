@@ -1,15 +1,16 @@
 {
   "schemaVersion": 1,
-  "id": "betteruiscale",
+  "id": "advanced-ui-scale",
   "version": "${version}",
 
-  "name": "Better UI Scaling",
+  "name": "Advanced UI Scaling",
   "description": "Adds incremental UI scaling to Minecraft!",
   "authors": [
-    "Rose"
+    "Rose",
+    "Qendolin"
   ],
   "contact": {
-    "sources": "https://github.com/YeahImRose/BetterUIScale"
+    "sources": "https://github.com/Qendolin/BetterUIScale"
   },
 
   "license": "CC0-1.0",
