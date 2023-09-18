@@ -18,6 +18,8 @@ import org.spongepowered.asm.mixin.injection.Redirect;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
+import java.util.Arrays;
+
 @Mixin(VideoOptionsScreen.class)
 public class MixinVideoOptionsScreen extends GameOptionsScreen {
     @Shadow
@@ -30,7 +32,12 @@ public class MixinVideoOptionsScreen extends GameOptionsScreen {
 
     @Inject(method = "<clinit>", at = @At("TAIL"))
     private static void injectModifyOptions(CallbackInfo ci) {
-        OPTIONS = new Option[]{Option.GRAPHICS, Option.RENDER_DISTANCE, Option.AO, Option.FRAMERATE_LIMIT, Option.VSYNC, Option.VIEW_BOBBING, OptionAccess.DOUBLE_GUI_SCALE, Option.ATTACK_INDICATOR, Option.GAMMA, Option.CLOUDS, Option.FULLSCREEN, Option.PARTICLES, Option.MIPMAP_LEVELS, Option.ENTITY_SHADOWS, Option.DISTORTION_EFFECT_SCALE, Option.ENTITY_DISTANCE_SCALING, Option.FOV_EFFECT_SCALE};
+        for (int i = 0; i < OPTIONS.length; i++) {
+            if(OPTIONS[i] == Option.GUI_SCALE) {
+                OPTIONS[i] = OptionAccess.DOUBLE_GUI_SCALE;
+                break;
+            }
+        }
     }
 
     @Redirect(method = "mouseClicked(DDI)Z",
