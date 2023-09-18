@@ -35,10 +35,13 @@ public class MixinVideoOptionsScreen extends GameOptionsScreen {
 
     @Redirect(method = "mouseClicked(DDI)Z",
               at = @At(value = "INVOKE", target = "Lnet/minecraft/client/MinecraftClient;onResolutionChanged()V"))
-    private void redirectOnResolutionChanged(MinecraftClient client) {}
+    private void redirectOnResolutionChanged(MinecraftClient client) {
+        // do nothing
+    }
 
     @Inject(method = "mouseReleased(DDI)Z", at = @At("TAIL"))
     private void injectMouseReleased(double mouseX, double mouseY, int button, CallbackInfoReturnable<Boolean> cir) {
+        assert this.client != null;
         this.client.onResolutionChanged();
     }
 }

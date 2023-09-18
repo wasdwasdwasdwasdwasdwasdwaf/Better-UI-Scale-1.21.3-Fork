@@ -6,8 +6,7 @@ import net.minecraft.text.Text;
 public interface OptionAccess {
     Text betterUIScale$getGenericLabel(int value);
     DoubleOption DOUBLE_GUI_SCALE = new DoubleOption("options.guiscale", 1.0D, 30.0D, 1.0F,
-            (gameOptions) -> { return (double) gameOptions.guiScale;},
-            (gameOptions, scale) -> { gameOptions.guiScale = scale.intValue(); },
-            (gameOptions, option) -> { return ((OptionAccess)option).betterUIScale$getGenericLabel((int)option.get(gameOptions));
-	});
+            (gameOptions) -> (double) gameOptions.guiScale,
+            (gameOptions, scale) -> gameOptions.guiScale = scale.intValue(),
+            (gameOptions, option) -> ((OptionAccess)option).betterUIScale$getGenericLabel((int)option.get(gameOptions)));
 }
