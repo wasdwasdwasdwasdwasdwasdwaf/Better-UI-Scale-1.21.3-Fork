@@ -23,6 +23,7 @@ void main() {
     vec2 txOffset = smoothstep(vec2(1.0) - boxSize, vec2(1.0), fract(tx));
     vec2 uv = (floor(tx) + 0.5 + txOffset) / texSize;
     vec4 color = textureGrad(Sampler0, uv, dFdx(texCoord0.xy), dFdy(texCoord0.xy)) * vertexColor * ColorModulator;
+    color.r = 1.0;
     if (color.a < 0.1) {
         discard;
     }
