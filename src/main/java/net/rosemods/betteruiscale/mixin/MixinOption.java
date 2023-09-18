@@ -14,7 +14,7 @@ public class MixinOption implements OptionAccess {
     @Shadow
     private Text key;
 
-    public Text getGenericLabel(int value) {
-        return new TranslatableText("options.generic_value", new Object[]{this.key, value});
+    public Text betterUIScale$getGenericLabel(int value) {
+        return new TranslatableText("options.generic_value", this.key, value);
     }
 }
