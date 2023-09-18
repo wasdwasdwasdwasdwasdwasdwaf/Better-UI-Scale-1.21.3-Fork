@@ -5,15 +5,12 @@
   "compatibilityLevel": "JAVA_16",
   "client": [
     "MixinRenderLayer",
-    "MixinWindow",
-    "compat.MixinSodiumGameOptionPages"
+    "MixinWindow"
+  ],
+  "mixins": [
+    "MixinGameOptions"
   ],
   "injectors": {
     "defaultRequire": 1
-  },
-  "mixins": [
-    "MixinOption",
-    "MixinVideoOptionsScreen",
-    "compat.MixinSodiumGameOptionPages"
-  ]
+  }
 }
