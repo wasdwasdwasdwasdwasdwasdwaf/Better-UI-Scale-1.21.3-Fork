@@ -2,12 +2,10 @@
 
 This mod is an updated fork of [BetterUIScale](https://github.com/YeahImRose/BetterUIScale)
 
-This mod aims to improve on Minecraft's implementation of GUI scaling by adding 15 logarithmic GUI scales as opposed to the normal, preset 3.
-
-Also, has built-in compatibility with Sodium's reworked video settings screen!
+It improves Minecraft's implementation of GUI scaling by adding over 10 times more GUI scales.
 
 ### Vanilla example
 [![Vanilla](./assets/showcase.gif "Vanilla")](./assets/showcase.gif "Vanilla")
 
-## Known incompatibilites
-No known compatibilites so far. If you find one, [please make an issue](https://github.com/Qendolin/BetterUIScale/issues)
+## Known incompatibilities
+No known incompatibilities so far. If you find one, [please make an issue](https://github.com/Qendolin/BetterUIScale/issues)
