@@ -10,4 +10,4 @@ Also, has built-in compatibility with Sodium's reworked video settings screen!
 [![Vanilla](./assets/showcase.gif "Vanilla")](./assets/showcase.gif "Vanilla")
 
 ## Known incompatibilites
-No known compatibilites so far. If you find one, [please make an issue](https://github.com/YeahImRose/BetterUIScale/issues)
+No known compatibilites so far. If you find one, [please make an issue](https://github.com/Qendolin/BetterUIScale/issues)
