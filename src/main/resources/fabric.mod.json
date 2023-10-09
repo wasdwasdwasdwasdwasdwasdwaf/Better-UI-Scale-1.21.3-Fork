@@ -16,6 +16,10 @@
   "license": "CC0-1.0",
 
   "environment": "*",
+  "entrypoints": {
+    "client": [ "net.rosemods.betteruiscale.Main" ],
+    "modmenu": [ "net.rosemods.betteruiscale.ModMenuIntegration" ]
+  },
   "mixins": [
     "betteruiscale.mixins.json"
   ],
@@ -26,6 +30,9 @@
     "minecraft": ">=1.19.4",
     "java": ">=16",
     "fabric": "*"
+  },
+  "recommends": {
+    "modmenu": "*"
   },
   "suggests": {
     "sodium-fabric": "*"
