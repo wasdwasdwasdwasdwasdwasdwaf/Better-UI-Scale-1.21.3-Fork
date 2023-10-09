@@ -10,10 +10,13 @@
     "Qendolin"
   ],
   "contact": {
-    "sources": "https://github.com/Qendolin/BetterUIScale"
+    "homepage": "https://github.com/Qendolin/BetterUIScale",
+    "sources": "https://github.com/Qendolin/BetterUIScale",
+    "issues": "https://github.com/Qendolin/better-clouds/issues"
   },
 
   "license": "CC0-1.0",
+  "icon": "assets/betteruiscale/icon.png",
 
   "environment": "*",
   "entrypoints": {
