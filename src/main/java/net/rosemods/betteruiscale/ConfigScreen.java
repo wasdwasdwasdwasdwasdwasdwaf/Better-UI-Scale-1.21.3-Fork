@@ -43,10 +43,9 @@ public class ConfigScreen
 
     @Override
     public void render(DrawContext context, int mouseX, int mouseY, float tickDelta) {
-        renderBackground(context);
-        list.render(context, mouseX, mouseY, tickDelta);
-        context.drawCenteredTextWithShadow(textRenderer, title, width / 2, 20, 0xFFFFFF);
         super.render(context, mouseX, mouseY, tickDelta);
+        list.render(context, mouseX, mouseY, tickDelta);
+        context.drawCenteredTextWithShadow(this.textRenderer, this.title, this.width / 2, 20, 16777215);
     }
 }
 
