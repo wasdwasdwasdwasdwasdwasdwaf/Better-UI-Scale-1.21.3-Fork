@@ -1,9 +1,6 @@
-# DISCONTINUED
-This mod will not be maintained or updated. For newer releases please check if a fork exists, or create one yourself.
-
 # Advanced UI Scaling
 
-This mod is an updated fork of [BetterUIScale](https://github.com/YeahImRose/BetterUIScale)
+This mod is an updated fork of [BetterUIScale](https://github.com/Qendolin/BetterUIScale) for 1.21.3 and above!
 
 It improves Minecraft's implementation of GUI scaling by adding over 10 times more GUI scales.
 
